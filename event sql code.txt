@@ -1,0 +1,11 @@
+create database event_management;
+use event_management;
+drop table events ;
+CREATE TABLE events (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+date DATE NOT NULL,
+venue VARCHAR(255) NOT NULL
+);
+select * from events;
+DELETE FROM events WHERE name = 'event_name';
